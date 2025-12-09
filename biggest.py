@@ -2,7 +2,7 @@ from pathlib import Path
 import re
 import csv
 
-base_dir = Path(r"C:\Users\jjf3\Projects\Prehistoric Planet Project Rewind")
+base_dir = Path(r"C:\Users\XXX\Projects\Prehistoric Planet Project Rewind")
 
 # Grab up to ~6 words before "of all time" for context
 pattern = re.compile(
@@ -42,3 +42,4 @@ with output_csv.open("w", newline="", encoding="utf-8") as f:
     writer.writerows(csv_rows)
 
 print(f"\nCSV saved to: {output_csv}")
+
